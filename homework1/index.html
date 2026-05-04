@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search — Open Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="search-screen">
+        <h1>Book Search</h1>
+        <div id="error-ui" class="hidden"></div>
+        <div class="search-group">
+            <input type="text" id="queryInput" placeholder="Enter book title...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="loader" class="hidden">Loading...</div>
+        <div id="resultsList"></div>
+    </div>
+
+    <div id="details-screen" class="hidden">
+        <button class="back-btn" onclick="showSearchScreen()">← Back</button>
+        
+        <div class="book-details-layout">
+            <img id="detail-cover" src="" class="cover-img" alt="Book cover">
+            <div class="book-info">
+                <h2 id="detail-title"></h2>
+                <p><strong>Description:</strong> <span id="detail-desc"></span></p>
+                <hr>
+                <h3 id="detail-author"></h3>
+                <p><strong>Biography:</strong> <span id="detail-bio"></span></p>
+                <p><strong>Date of birth:</strong> <span id="detail-birth"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

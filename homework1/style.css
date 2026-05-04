@@ -1,0 +1,114 @@
+body { 
+    font-family: sans-serif; 
+    background-color: #f4f4f9; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+.hidden { 
+    display: none; 
+}
+
+/* Поиск */
+.search-group { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+input { 
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #605d5d; 
+    border-radius: 4px; 
+}
+
+button { 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+}
+
+/* Список */
+.book-item { 
+    padding: 15px; 
+    border-bottom: 1px solid #eee; 
+    cursor: pointer; 
+    transition: background 0.2s; 
+}
+
+.book-item:hover { 
+    background: #f0f7ff; 
+}
+
+/* Состояния */
+#loader { 
+    text-align: center; 
+    padding: 20px; 
+    font-weight: bold; 
+    color: #555; 
+}
+
+#error-ui { 
+    color: #d9534f; 
+    background: #fdf7f7; 
+    padding: 10px; 
+    border: 1px solid #d9534f; 
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+}
+
+/* Детали */
+.back-btn { 
+    background: #6c757d; 
+    margin-bottom: 15px; 
+}
+
+.detail-content h2 { 
+    margin-top: 0; 
+}
+
+.cover-img { 
+    max-width: 200px; 
+    display: block; 
+    margin-bottom: 15px; 
+    border-radius: 4px; 
+}
+
+/* Контейнер, который выстраивает обложку и текст в ряд */
+.book-details-layout {
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+}
+
+/* Блок с текстом, который занимает все оставшееся место */
+.book-info {
+    flex: 1;
+}
+
+/* Убираем лишний отступ сверху у заголовка книги */
+.book-info h2 {
+    margin-top: 0;
+}
+
+/* Стили для обложки  */
+.cover-img {
+    max-width: 200px; 
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 15px;
+}
